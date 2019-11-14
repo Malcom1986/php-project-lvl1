@@ -1,0 +1,13 @@
+{
+    "name": "malcom/braingames",
+    "description": "php project level 1",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Maksim Litvinov",
+            "email": "litvinovmksm@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
