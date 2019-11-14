@@ -1,5 +1,6 @@
 {
     "name": "malcom/braingames",
+    "bin": ["bin/brain-games"],
     "description": "php project level 1",
     "type": "project",
     "authors": [
