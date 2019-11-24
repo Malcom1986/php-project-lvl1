@@ -1,7 +1,8 @@
 {
     "name": "malcom/braingames",
     "bin": [
-        "bin/brain-games"
+        "bin/brain-games",
+        "bin/brain-even"
     ],
     "description": "php project level 1",
     "type": "project",
@@ -17,7 +18,8 @@
     },
     "autoload": {
         "files": [
-            "src/Cli.php"
+            "src/Cli.php",
+            "src/games/Even.php"
         ]
     },
     "require": {
