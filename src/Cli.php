@@ -4,11 +4,13 @@ namespace BrainGames\Cli;
 
 use function cli\line;
 use function cli\prompt;
+use function  BrainGames\Games\Even\evenGame;
 
-function run()
+function run($gameRule)
 {
     line('Welcome to brain games!');
-    $name = prompt('May I have your name?');
-    line('Hello %s', $name);
-    return;
+    line($gameRule);
+    $playerName = prompt('May I have your name?');
+    line('Hello %s!', $playerName);
+    evenGame($playerName);
 }

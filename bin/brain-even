@@ -1,8 +1,9 @@
 #!/usr/bin/env php
 <?php
 
-use function BrainGames\Games\Even\run;
+use function BrainGames\Cli\run;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-run();
+$gameRule = 'Answer "yes" if the number is even, otherwise answer "no".';
+run($gameRule);
