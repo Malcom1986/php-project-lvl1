@@ -6,5 +6,6 @@ This repository contains Brain Games. This is a set of mini games launched from 
 
 ____
 #### Install:
-1. Clone repository
-2. `make install`
+`$ composer global require malcom/braingames`
+
+[![Installation](https://i.ibb.co/2vRkDY5/6theml901-Gd-Pz-Q4-Jmv-Gg-Y70vg.png)](https://asciinema.org/a/6theml901GdPzQ4JmvGgY70vg "Installation")
