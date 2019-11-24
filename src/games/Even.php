@@ -26,6 +26,8 @@ function evenGame($playerName)
             line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'");
             line("Let's try again %s", $playerName);
             return;
+        } else {
+            line('Correct!');
         }
     }
     line("Congratulations, %s!", $playerName);
