@@ -4,7 +4,8 @@ namespace BrainGames\Cli;
 
 use function cli\line;
 use function cli\prompt;
-use function  BrainGames\Games\Even\evenGame;
+use function BrainGames\Games\Even\evenGame;
+use function BrainGames\Games\Calculator\game;
 
 function run($gameRule)
 {
@@ -12,5 +13,5 @@ function run($gameRule)
     line($gameRule);
     $playerName = prompt('May I have your name?');
     line('Hello %s!', $playerName);
-    evenGame($playerName);
+    game($playerName);
 }
