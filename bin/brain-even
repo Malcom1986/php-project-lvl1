@@ -11,5 +11,4 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-$gameRule = 'Answer "yes" if the number is even, otherwise answer "no".';
-run($gameRule);
+run('Even');

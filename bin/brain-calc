@@ -11,5 +11,4 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-$gameRule = 'What is the result of the expression?';
-run($gameRule);
+run('Calculator');

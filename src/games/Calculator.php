@@ -5,15 +5,9 @@ namespace BrainGames\Games\Calculator;
 use function cli\line;
 use function cli\prompt;
 
-function generateAction($num1, $num2)
+function getGameRule()
 {
-    $actions = [
-        ['action' => '+', 'result' => $num1 + $num2],
-        ['action' => '-', 'result' => $num1 - $num2],
-        ['action' => '*', 'result' => $num1 * $num2]
-    ];
-    $randomKey = array_rand($actions);
-    return $actions[$randomKey];
+    return "What is the result of the expression?";
 }
 
 function generateNumber()
@@ -21,24 +15,30 @@ function generateNumber()
     return \mt_rand(0, 20);
 }
 
-function game($playerName)
+function generateQuestion($num1, $num2)
 {
-    for ($round = 1; $round <= 3; $round += 1) {
-        $firstNumber = generateNumber();
-        $secondNumber = generateNumber();
-        $action = generateAction($firstNumber, $secondNumber);
-        $token = $action['action'];
-        $correctAnswer = $action['result'];
-        line('Question: %s', "{$firstNumber} {$token} {$secondNumber}");
-        $playerAnswer = prompt('Your answer');
-        if ($playerAnswer == $correctAnswer) {
-            line('Correct!');
-        } else {
-            line("'{$playerAnswer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'");
-            line("Let's try again %s", $playerName);
-            return;
-        }
-    }
-    line("Congratulations, %s!", $playerName);
-    return;
+    $questions = [
+        [
+            'question' => "{$num1} + {$num2}",
+            'answer' => $num1 + $num2
+        ],
+        [
+            'question' => "{$num1} - {$num2}",
+            'answer' => $num1 - $num2
+        ],
+        [
+            'question' => "{$num1} * {$num2}",
+            'answer' => $num1 * $num2
+        ]
+    ];
+    $randomKey = array_rand($questions, 1);
+    return $questions[$randomKey];
+}
+
+function game()
+{
+
+    $firstNumber = generateNumber();
+    $secondNumber = generateNumber();
+    return generateQuestion($firstNumber, $secondNumber);
 }
