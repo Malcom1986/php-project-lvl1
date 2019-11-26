@@ -2,9 +2,6 @@
 
 namespace BrainGames\Games\Calculator;
 
-use function cli\line;
-use function cli\prompt;
-
 function getGameRule()
 {
     return "What is the result of the expression?";

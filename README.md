@@ -8,9 +8,12 @@ ____
 #### Install:
 `$ composer global require malcom/braingames`
 
-##### Launch examples:
+#### Launch examples:
 1. `$ brain-even`
+
 [![Installation](https://asciinema.org/a/6theml901GdPzQ4JmvGgY70vg.png)](https://asciinema.org/a/6theml901GdPzQ4JmvGgY70vg "Installation")
 
+
 2. `$ brain-calc`
+
 [![asciicast](https://asciinema.org/a/hnve2qoOx0TFh398DkQOlIr3m.png)](https://asciinema.org/a/hnve2qoOx0TFh398DkQOlIr3m "brain-calc")

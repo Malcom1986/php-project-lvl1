@@ -3,11 +3,12 @@
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
-        "bin/brain-calc"
+        "bin/brain-calc",
+        "bib/brain-gcd"
     ],
     "description": "php project level 1",
     "type": "project",
-    "version": "0.2.0",
+    "version": "1.3.0",
     "authors": [
         {
             "name": "Maksim Litvinov",
@@ -22,7 +23,8 @@
         "files": [
             "src/Cli.php",
             "src/games/Even.php",
-            "src/games/Calculator.php"
+            "src/games/Calculator.php",
+            "src/games/Gcd.php"
         ]
     },
     "require": {

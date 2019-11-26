@@ -2,9 +2,6 @@
 
 namespace BrainGames\Games\Even;
 
-use function cli\line;
-use function cli\prompt;
-
 function getGameRule()
 {
     return 'Answer "yes" if the number is even, otherwise answer "no"';
