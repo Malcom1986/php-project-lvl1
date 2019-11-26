@@ -17,3 +17,7 @@ ____
 2. `$ brain-calc`
 
 [![asciicast](https://asciinema.org/a/hnve2qoOx0TFh398DkQOlIr3m.png)](https://asciinema.org/a/hnve2qoOx0TFh398DkQOlIr3m "brain-calc")
+
+3. `$ brain-gcd`
+
+[![asciicast](https://asciinema.org/a/FyqcuPalSibH3Qx2j4WdgbNoC.png)](https://asciinema.org/a/FyqcuPalSibH3Qx2j4WdgbNoC "brain-gcd")
