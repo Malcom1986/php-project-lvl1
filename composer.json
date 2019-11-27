@@ -5,7 +5,8 @@
         "bin/brain-even",
         "bin/brain-calc",
         "bin/brain-gcd",
-        "bin/brain-progression"
+        "bin/brain-progression",
+        "bin/brain-prime"
     ],
     "description": "php project level 1",
     "type": "project",
@@ -26,7 +27,8 @@
             "src/games/Calculator.php",
             "src/games/Gcd.php",
             "src/games/Progression.php",
-            "src/games/functions/Functions.php"
+            "src/games/functions/Functions.php",
+            "src/games/Prime.php"
         ]
     },
     "require": {

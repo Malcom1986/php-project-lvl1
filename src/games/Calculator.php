@@ -2,40 +2,31 @@
 
 namespace BrainGames\Games\Calculator;
 
+use function BrainGames\Games\Functions\Functions\rand;
+
 function getGameRule()
 {
     return "What is the result of the expression?";
 }
 
-function generateNumber()
+function game()
 {
-    return \mt_rand(0, 20);
-}
-
-function generateQuestion($num1, $num2)
-{
+    $firstNumber = rand(20);
+    $secondNumber = rand(20);
     $questions = [
         [
-            'question' => "{$num1} + {$num2}",
-            'answer' => $num1 + $num2
+            'question' => "{$firstNumber} + {$secondNumber}",
+            'answer' => $firstNumber + $secondNumber
         ],
         [
-            'question' => "{$num1} - {$num2}",
-            'answer' => $num1 - $num2
+            'question' => "{$firstNumber} - {$secondNumber}",
+            'answer' => $firstNumber - $secondNumber
         ],
         [
-            'question' => "{$num1} * {$num2}",
-            'answer' => $num1 * $num2
+            'question' => "{$firstNumber} * {$secondNumber}",
+            'answer' => $firstNumber * $secondNumber
         ]
     ];
     $randomKey = array_rand($questions, 1);
     return $questions[$randomKey];
-}
-
-function game()
-{
-
-    $firstNumber = generateNumber();
-    $secondNumber = generateNumber();
-    return generateQuestion($firstNumber, $secondNumber);
 }

@@ -7,6 +7,7 @@ This repository contains Brain Games. This is a set of mini games launched from 
 ____
 #### Install:
 `$ composer global require malcom/braingames`
+____
 
 #### Launch examples:
 1. `$ brain-even`
