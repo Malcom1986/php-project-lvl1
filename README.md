@@ -21,3 +21,7 @@ ____
 3. `$ brain-gcd`
 
 [![asciicast](https://asciinema.org/a/FyqcuPalSibH3Qx2j4WdgbNoC.png)](https://asciinema.org/a/FyqcuPalSibH3Qx2j4WdgbNoC "brain-gcd")
+
+4. `$ brain-progression`
+
+[![asciicast](https://asciinema.org/a/0CCDzXmN5OCW0xhLAGmRDGCxs.png)](https://asciinema.org/a/0CCDzXmN5OCW0xhLAGmRDGCxs "brain-progression")

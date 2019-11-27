@@ -9,7 +9,6 @@
     ],
     "description": "php project level 1",
     "type": "project",
-    "version": "1.3.0",
     "authors": [
         {
             "name": "Maksim Litvinov",
