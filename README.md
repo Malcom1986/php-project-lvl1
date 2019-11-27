@@ -26,3 +26,5 @@ ____
 4. `$ brain-progression`
 
 [![asciicast](https://asciinema.org/a/0CCDzXmN5OCW0xhLAGmRDGCxs.png)](https://asciinema.org/a/0CCDzXmN5OCW0xhLAGmRDGCxs "brain-progression")
+
+5. `$ brain-prime`

@@ -11,7 +11,7 @@ function getGameRule()
 
 function game()
 {
-    $progression = makeProgression(rand(10), rand(10));
+    $progression = makeProgression(rand(9), rand(9));
     $randomKey = rand(9);
     $answer = $progression[$randomKey];
     $question = implode('  ', hideElement($progression, $randomKey));
