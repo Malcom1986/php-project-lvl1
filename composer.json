@@ -4,7 +4,8 @@
         "bin/brain-games",
         "bin/brain-even",
         "bin/brain-calc",
-        "bin/brain-gcd"
+        "bin/brain-gcd",
+        "bin/brain-progression"
     ],
     "description": "php project level 1",
     "type": "project",
@@ -24,7 +25,9 @@
             "src/Cli.php",
             "src/games/Even.php",
             "src/games/Calculator.php",
-            "src/games/Gcd.php"
+            "src/games/Gcd.php",
+            "src/games/Progression.php",
+            "src/games/functions/Functions.php"
         ]
     },
     "require": {
