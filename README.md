@@ -17,6 +17,7 @@ Answer **yes** if the number is even, otherwise answer **no**
  `$ brain-even`
 
 [![Installation](https://asciinema.org/a/6theml901GdPzQ4JmvGgY70vg.png)](https://asciinema.org/a/6theml901GdPzQ4JmvGgY70vg "Installation")
+
 ----
 
 #### 2. "Calculator"
@@ -25,6 +26,7 @@ Find is the result of the expression
 `$ brain-calc`
 
 [![asciicast](https://asciinema.org/a/hnve2qoOx0TFh398DkQOlIr3m.png)](https://asciinema.org/a/hnve2qoOx0TFh398DkQOlIr3m "brain-calc")
+
 ----
 
 #### 3. "Greatest common divisor"
@@ -33,6 +35,7 @@ Find the greatest common divisor of given numbers
 `$ brain-gcd`
 
 [![asciicast](https://asciinema.org/a/FyqcuPalSibH3Qx2j4WdgbNoC.png)](https://asciinema.org/a/FyqcuPalSibH3Qx2j4WdgbNoC "brain-gcd")
+
 ----
 
 #### 4. "Progression"
@@ -41,8 +44,11 @@ Find missing number in the progression
 `$ brain-progression`
 
 [![asciicast](https://asciinema.org/a/0CCDzXmN5OCW0xhLAGmRDGCxs.png)](https://asciinema.org/a/0CCDzXmN5OCW0xhLAGmRDGCxs "brain-progression")
+
 ----
 
 #### 5. "Is a prime"
 Answer **yes** if given number is prime. Otherwise answer **no** 
 `$ brain-prime`
+
+[![asciicast](https://asciinema.org/a/FtHsD6oSMwPJlDz2aWe6ZNlWC.png)](https://asciinema.org/a/FtHsD6oSMwPJlDz2aWe6ZNlWC "brain-prime")
