@@ -8,8 +8,14 @@
         "bin/brain-progression",
         "bin/brain-prime"
     ],
-    "description": "php project level 1",
-    "type": "project",
+    "description": "hexlet php project level 1",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "game",
+        "braingame",
+        "logic"
+    ],
     "authors": [
         {
             "name": "Maksim Litvinov",
