@@ -7,13 +7,13 @@ use function cli\prompt;
 
 function run($gameName)
 {
-    $importFrom = "\\BrainGames\\Games\\{$gameName}\\";
     line('Welcome to brain games!');
-    $getGameRule = $importFrom . "getGameRule";
-    line($getGameRule());
+    $importFrom = "\\BrainGames\\Games\\{$gameName}\\";
+    $gameRule = constant($importFrom . 'GAME_RULE');
+    line($gameRule);
     $playerName = prompt('May I have your name?');
     line('Hello %s!', $playerName);
-    $game = $importFrom . "game";
+    $game = $importFrom . 'game';
     for ($round = 1; $round <= 3; $round += 1) {
         ['question' => $question, 'answer' => $correctAnswer] = $game();
         line('Question: %s', $question);

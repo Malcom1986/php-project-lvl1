@@ -2,11 +2,14 @@
 
 namespace BrainGames\Games\Even;
 
-use function BrainGames\Games\Functions\Functions\{rand, isEven};
+use function BrainGames\Games\Rand\rand;
+use function BrainGames\Cli\run;
 
-function getGameRule()
+const GAME_RULE = 'Answer "yes" if the number is even, otherwise answer "no"';
+
+function isEven($number)
 {
-    return 'Answer "yes" if the number is even, otherwise answer "no"';
+    return $number % 2 === 0;
 }
 
 function game()
@@ -17,4 +20,9 @@ function game()
         'question' => $question,
         'answer' => $answer
     ];
+}
+
+function runGame()
+{
+    run('Even');
 }

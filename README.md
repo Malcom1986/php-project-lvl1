@@ -48,7 +48,7 @@ Find missing number in the progression
 ----
 
 #### 5. "Is a prime"
-Answer **yes** if given number is prime. Otherwise answer **no** 
+Answer **yes** if given number is prime. Otherwise answer **no**
 `$ brain-prime`
 
 [![asciicast](https://asciinema.org/a/FtHsD6oSMwPJlDz2aWe6ZNlWC.png)](https://asciinema.org/a/FtHsD6oSMwPJlDz2aWe6ZNlWC "brain-prime")

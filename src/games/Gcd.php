@@ -2,11 +2,17 @@
 
 namespace BrainGames\Games\Gcd;
 
-use function BrainGames\Games\Functions\Functions\{rand, gcd};
+use function BrainGames\Games\Rand\rand;
+use function BrainGames\Cli\run;
 
-function getGameRule()
+const GAME_RULE = 'Find the greatest common divisor of given numbers.';
+
+function gcd($num1, $num2)
 {
-    return "Find the greatest common divisor of given numbers.";
+    if ($num2 == 0) {
+        return $num1;
+    }
+    return gcd($num2, $num1 % $num2);
 }
 
 function game()
@@ -18,4 +24,9 @@ function game()
         "question" => "{$firstNumber}  {$secondNumber}",
         "answer" => $gcd
     ];
+}
+
+function runGame()
+{
+    run('Gcd');
 }

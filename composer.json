@@ -1,7 +1,6 @@
 {
     "name": "malcom/braingames",
     "bin": [
-        "bin/brain-games",
         "bin/brain-even",
         "bin/brain-calc",
         "bin/brain-gcd",
@@ -10,7 +9,7 @@
     ],
     "description": "hexlet php project level 1",
     "license": "MIT",
-    "type": "library",
+    "type": "project",
     "keywords": [
         "game",
         "braingame",
@@ -22,7 +21,6 @@
             "email": "litvinovmksm@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
     "scripts": {
         "phpcs": "phpcs"
     },
@@ -33,7 +31,7 @@
             "src/games/Calculator.php",
             "src/games/Gcd.php",
             "src/games/Progression.php",
-            "src/games/functions/Functions.php",
+            "src/games/Rand.php",
             "src/games/Prime.php"
         ]
     },
