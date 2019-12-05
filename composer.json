@@ -31,7 +31,6 @@
             "src/games/Calculator.php",
             "src/games/Gcd.php",
             "src/games/Progression.php",
-            "src/games/Rand.php",
             "src/games/Prime.php"
         ]
     },

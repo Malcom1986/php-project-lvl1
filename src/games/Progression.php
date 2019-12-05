@@ -2,17 +2,16 @@
 
 namespace BrainGames\Games\Progression;
 
-use function BrainGames\Games\Rand\rand;
 use function BrainGames\Cli\run;
 
 const GAME_RULE = 'What number is missing in the progression?';
+const PROGRESSION_LENGTH = 10;
 
 function makeProgression($firstMember, $step, $progressionLength)
 {
     $progression = [];
     for ($i = 0; $i < $progressionLength; $i += 1) {
-        $progressionMember = $firstMember + $step * $i;
-        $progression[] = $progressionMember;
+        $progression[] = $firstMember + $step * $i;
     }
     return $progression;
 }
@@ -27,20 +26,20 @@ function hideElement($collection, $key)
     return $newCollection;
 }
 
-function game()
-{
-    $progressionLength = 10;
-    $progression = makeProgression(rand(9), rand(9), $progressionLength);
-    $randomKey = rand($progressionLength - 1);
-    $answer = $progression[$randomKey];
-    $question = implode('  ', hideElement($progression, $randomKey));
-    return [
-        'question' => $question,
-        'answer' => $answer
-    ];
-}
-
 function runGame()
 {
-    run('Progression');
+    $roundGenerator = function () {
+        $progressionFirstMember = mt_rand(0, 9);
+        $progressionStep = mt_rand(0, 9);
+        $progression = makeProgression($progressionFirstMember, $progressionStep, PROGRESSION_LENGTH);
+        $hiddenElementKey = mt_rand(0, PROGRESSION_LENGTH - 1);
+        $answer = $progression[$hiddenElementKey];
+        $question = implode('  ', hideElement($progression, $hiddenElementKey));
+        return [
+            'question' => $question,
+            'answer' => $answer
+        ];
+    };
+    
+    run(GAME_RULE, $roundGenerator);
 }
